@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+
+
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="app">
+            <div id="top">
+                <div id="user-info">
+                    <img src="https://randomuser.me/api/portraits/women/75.jpg"
+                    alt="mulher branca de cabelos lisos soltos de cor ruivo com batom vermelho ">
+                
+                    <div id="user-status">
+                        <strong>Fernanda Soares</strong>
+                        <div class="status">
+                            Online
+                        </div>
+                    </div>
+                </div>
+                <div id="close-chat">
+                    <i class="ph ph-x"></i>
+                </div>
+                
+            </div>
+            <div id="messages">
+                <div id="last-seen">Hoje 17:30</div>
+                <div class="messages">
+                    <div class="message">
+                        <div class="top">Fernanda - 17:30</div>
+                        <div class="body">Tive uma ideia incrível para um projeto!🎯</div>
+                    </div>
+                    <div class="message you">
+                        <div class="top">Você - 18:45</div>
+                        <div class="body">Sério? Me conta mais☕</div>
+                    </div>
+                    <div class="message">
+                        <div class="top">Fernanda - 19:20</div>
+                        <div class="body">E se nós fizermos um chat moderno e responsivo em apenas 1 semana?💻</div>
+                    </div>
+                    <div class="message you">
+                        <div class="top">Você - 19:33</div>
+                        <div class="body"><strong> #boraCodar😍</strong></div>
+                    </div>
+                    <div class="message">
+                        <div class="top">Fernanda - 19:45</div>
+                        <div class="body">Jóia! Vou marcar uma reunião com o time para a próxima segunda-feira.
+                             E assim conversaremos sobre alguns detalhes interessantes.</div>
+                    </div>
+                    <div class="message you">
+                        <div class="top">Você - 19:33</div>
+                        <div class="body">Combinado então!</div>
+                    </div>
+                </div>
+            </div>
+            <div id="botton">
+                <form>
+                    <div class="input-wraper">
+                        <input type="text" placeholder="Digite sua mensagem">
+                        <button>
+                            <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const messages = document.querySelector(".messages")
+        messages.lastElementChild.scrollIntoView()
+    </script>
+
+
+</body>
+</html>
